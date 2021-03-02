@@ -1,0 +1,34 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "校园",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#F10216",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./resource/images/tabbar/sc.png",
+        "selectedIconPath": "./resource/images/tabbar/sc-a.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "发布",
+        "iconPath": "./resource/images/tabbar/dp.png",
+        "selectedIconPath": "./resource/images/tabbar/dp-a.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
