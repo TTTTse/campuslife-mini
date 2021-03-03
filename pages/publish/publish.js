@@ -1,6 +1,4 @@
-// index.js
-// 获取应用实例
-const app = getApp()
+// pages/publish/publish.js
 Page({
 
   /**
