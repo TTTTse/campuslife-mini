@@ -1,9 +1,8 @@
 // pages/mine/mine.js
 const app = getApp()
-
 Page({
   data: {
-    motto: 'Hello World',
+    motto: {},
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
@@ -41,6 +40,21 @@ Page({
         }
       })
     }
+    wx.request({
+      url: "http://localhost:8080/test",
+      header: {
+        'content-type': 'applicetion/json'
+      },
+      success :res => {
+        console.log(res.data)
+        this.setData({
+          motto: res.data[1].name
+        })
+      },
+      fail(res) {
+        console.log("获取失败")
+      }
+    })
   },
   getUserInfo(e) {
     console.log(e)

@@ -1,0 +1,1 @@
+exports.requestURL = "http://localhost:8080";
